@@ -22,7 +22,7 @@ export class AppComponent implements OnInit{
     this.calculateInterest(500, 2.5, 12);
     this.countVowelsAndConsonants('aeioufghjk');
   }
-  
+
 
   // criar função
   buttonClicked(): void {
@@ -36,7 +36,7 @@ export class AppComponent implements OnInit{
   // Calcular média
   calculateAvarage(numbers: number[]): void {
     let sum: number = 0;
-    
+
     numbers.map((i) => {
       sum += i;
     });
@@ -45,13 +45,13 @@ export class AppComponent implements OnInit{
     console.log('Média = '+ average);
   }
 
-  // Manipulação de Strings 
+  // Manipulação de Strings
   verifyString(value: String): void {
-    
+
     if (value === 'devs2blu') {
-      console.log(value.length + " caracteres e igual a devs2toblu")
+      console.log(value.length + " caracteres são iguais a devs2toblu")
     } else {
-      console.log(value.length + " caracteres e não é igual a devs2toblu")
+      console.log(value.length + " caracteres não são iguais a devs2toblu")
     }
   }
 
@@ -77,8 +77,8 @@ export class AppComponent implements OnInit{
         totalVowels++;
       } else if (letter.match(/[a-zA-Z]/)) {
         totalConsonants++;
-      } 
-      
+      }
+
     }
 
     console.log("Total vogais = "+ totalVowels +" e Total consoantes = "+ totalConsonants);
