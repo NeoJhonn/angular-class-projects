@@ -1,8 +1,47 @@
-h1, p {
-  text-align: center;
-  font-size: 50px;
+h1 {
+    margin-top: 20px;
+    color: #ebe7f0;
 }
 
-h1 {
-  margin-top: 5%;
+img, a {
+    margin-left: 100px;
+}
+
+header {
+    background-color: rgb(233, 189, 158);
+}
+
+h1, h2, h3, p {
+    text-align: center;
+    padding: 20px;
+}
+
+h3, h2, p {
+    color: #f3efd4;
+}
+
+button {
+    height: 50px;
+    width: 100px;
+    background-color: #93daca;
+    border: none;
+    border-radius: 16px;
+}
+
+a {
+    text-decoration: none;
+  }
+
+
+button:hover {
+    background-color: #b4ddd3;
+}
+
+button:active {
+    background-color: aquamarine;
+}
+
+div {
+    display: flex;
+    justify-content: center;
 }
