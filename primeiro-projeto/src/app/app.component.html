@@ -1,24 +1,4 @@
- <header>
-  <div class="cabecalho">
-    <div><img src="/assets/box.png" alt="icone caixa"></div>
-    <div class="titulo"><h1>CRUD de Produtos</h1></div>
-    <div class="botoes">
-      <a href="">Cadastrar Produto</a>
-      <a href="">Início</a>
-    </div>
-  </div>
- </header>
+<app-header></app-header>
 
- <h1>{{ title }}</h1>
- <h2>{{ titulo }}</h2>
-
- <h3>Jhonny Alves de Souza Azevedo</h3>
-
- <p>Este é meu primeiro projeto utilizando Angular!</p>
-
- <div class="botao"><button (click)="buttonClicked()">Click</button></div>
-
- <!-- versão antiga onclick="" -->
- <!-- versão Angular = (click)-->
- <!-- Typescript auxilia para previnir erros -->
-
+<!-- Pega o conteúdo que está em home.componente.html -->
+<router-outlet></router-outlet>

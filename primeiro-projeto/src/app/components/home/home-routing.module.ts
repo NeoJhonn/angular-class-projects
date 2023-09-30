@@ -1,15 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './components/home/home.component';
+import { HomeComponent } from './home.component';
 
 // Aqui colocamos nossas rotas
 const routes: Routes = [
-  // criar uma rota - Objeto de rota
-  // 1 - zerar rotas
-  { path: '', pathMatch: 'full', redirectTo: 'home'},
-  // 2 - criar a rota da Home
-  // defino rota e defino componente
   {path: 'home', component: HomeComponent}
+  // caso tivesse filhos estaria aqui
+  // {path: 'filho', component: HomeFilhoComponent}
 ];
 
 // Principal arquivo de roteamento
@@ -17,4 +14,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class HomeRoutingModule { }
