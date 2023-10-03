@@ -1,1 +1,38 @@
 <h1>{{ createProduct }}</h1>
+
+<!-- chamar  o formulário de create  product -->
+<form [formGroup]="formProduct" >
+    <!-- formControlName = algum atributo que foi construído para o formulário  -->
+    <label for="name">Nome:</label>
+    <input type="text" formControlName="name">
+
+    <label for="description">Descrição:</label>
+    <input type="text" formControlName="description">
+
+    <label for="code">Código:</label>
+    <input type="text" formControlName="code">
+
+    <label for="costPrice">Preço de Custo:</label>
+    <input type="text" formControlName="costPrice">
+
+    <label for="salePrice">Preço de Venda:</label>
+    <input type="text" formControlName="salePrice">
+
+    <label for="preparationTime">Tempo de Preparo:</label>
+    <input type="text" formControlName="preparationTime">
+
+    <label for="productType">Tipo de Produto:</label>
+    <select formControlName="productType">
+        <option value="SNACK">Snack</option>
+        <option value="DRINK">Bebida</option>
+        <option value="DESSERT">Sobremesa</option>
+    </select>
+
+    <button type="submit" (click)="sendForm()">Cadastrar</button>
+</form>
+
+<!-- Omite ou motrar conteúdos de uma tag html dada uma condições -->
+<h5>Condição ngIf = {{ show }}</h5>
+<h5 *ngIf="show">Teste com ngIf</h5>
+
+<button (click)="hideTestNgIf()">Mostar/Esconder ngIf</button>
