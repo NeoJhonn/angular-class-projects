@@ -1,8 +1,8 @@
-a {
+.botoes {
     font-size: 20px;
     font-weight: 600;
     color: #d9e3e9;
-    background-color: #3a4131;
+    background-color: #5b7ad6;
     border-radius: 10px;
     padding: 10px;
     height: 30px;
@@ -15,7 +15,7 @@ a {
     padding: 10px;
   }
   
-  .cabecalho .botoes a {
+  .cabecalho .botoes-container .botoes {
     text-decoration: none;
     margin: auto 10px;
   }
@@ -25,25 +25,25 @@ a {
   }
   
   .cabecalho .titulo h1 {
-    color: #4a9deb;
+    color: #bec6ce;
   }
   
-  .botoes {
+  .botoes-container {
     display: flex;
     justify-content: flex-end;
   } 
   
   
   header {
-      background-color: rgb(233, 189, 158);
+      background-color: rgb(51, 48, 46);
       height: 140px;
   }
 
-  a:hover {
+  .botoes:hover {
     background-color: #7f9b94;
   }
   
-  a:active {
+  .botoes:active {
     background-color: rgb(96, 170, 145);
   }
   
