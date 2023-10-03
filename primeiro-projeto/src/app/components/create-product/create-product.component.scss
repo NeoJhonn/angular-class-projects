@@ -6,9 +6,9 @@ h1 {
 .form-product {
   margin: 0 auto;
   max-width: 500px;
-  border: 1px solid rgba(40, 40, 66, 50%);
+  border: 1px solid rgba(7, 7, 12, 0.5);
   border-radius: 5px;
-  background-color: rgba(40, 40, 66, 50%);
+  background-color: #28203e;
   width: 60vw;
   min-width: 300px;
   /*padding: top right bottom left*/
@@ -19,7 +19,7 @@ h1 {
 #name,#description,#code,#costPrice,#salePrice,#preparationTime{
   width: 100%;
   /*margin: top right bottom left*/
-  margin: 2px 0 0 0;
+  margin: 1px 0 0 0;
   min-height: 2em;/*define uma atura mínima para os elementos*/
   border-radius: 5px;
   border-color: rgba(40, 40, 66, 50%);
@@ -29,7 +29,7 @@ h1 {
 select {
   width: 60%;
   /*margin: top right bottom left*/
-  margin: 2px 0 0 0;
+  margin: 1px 0 0 0;
   min-height: 2.5em;/*define uma atura mínima para os elementos*/
   border-radius: 5px;
   border-color: rgba(40, 40, 66, 50%);
@@ -39,7 +39,8 @@ select {
 label {
   display: block;
   margin: 1rem 0;
-  color: rgb(255, 255, 255);
+  color: rgb(230, 221, 221);
+  font-weight: 900;
 }
 
 #submit {
