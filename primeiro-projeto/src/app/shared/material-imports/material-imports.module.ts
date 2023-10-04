@@ -5,7 +5,8 @@ import { NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
-import {MatSelectModule} from '@angular/material/select';
+import { MatSelectModule } from '@angular/material/select';
+import { MatIconModule } from '@angular/material/icon';
 
 
 
@@ -17,7 +18,8 @@ import {MatSelectModule} from '@angular/material/select';
     MatFormFieldModule,
     MatInputModule,
     MatCardModule,
-    MatSelectModule
+    MatSelectModule,
+    MatIconModule
   ],
   exports: [
     MatButtonModule,
@@ -25,7 +27,8 @@ import {MatSelectModule} from '@angular/material/select';
     MatFormFieldModule,
     MatInputModule,
     MatCardModule,
-    MatSelectModule
+    MatSelectModule,
+    MatIconModule
   ]
 })
 export class MaterialImportsModule { }
