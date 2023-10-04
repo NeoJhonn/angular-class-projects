@@ -14,7 +14,7 @@ import { MaterialImportsModule } from 'src/app/shared/material-imports/material-
   imports: [
     CommonModule,
     CreateProductRoutingModule,
-    FormsModule, 
+    FormsModule,
     ReactiveFormsModule,
     MaterialImportsModule,
   ]
