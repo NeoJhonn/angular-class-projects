@@ -8,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 home: String = "Home";
 
+// Criando um vetor(objeto) -  funciona como um ArrayList
+public listaTarefas: String[] = ["Limpar a casa", "Tirar o lixo", "Estudar java"];
+
   constructor() { }
 
   ngOnInit(): void {

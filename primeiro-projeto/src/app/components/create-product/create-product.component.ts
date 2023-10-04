@@ -9,6 +9,8 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 export class CreateProductComponent implements OnInit {
   // Atributos
   createProduct: String = "Cadastrar Produto";
+  // Array que vai ser percorrido pelo ngFor
+  public listTypes: string[] = ['SNACK', 'DRINK', 'DESSERT'];
 
   // Declara o formulário - tipo FormGroup
   public formProduct: FormGroup

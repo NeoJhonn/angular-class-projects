@@ -1,41 +1,74 @@
 <h1>{{ createProduct }}</h1>
 
-<div class="form-product">
-    <!-- chamar  o formulário de create  product -->
-    <form [formGroup]="formProduct" >
-        <!-- formControlName = algum atributo que foi construído para o formulário  -->
-        <label for="name">Nome:</label>
-        <input type="text" formControlName="name" id="name">
+<div class="example-container">
+    <mat-card>
+        <mat-card-content class="container">
+            <!-- chamar  o formulário de create  product -->
+            <form [formGroup]="formProduct" class="row">
+                <!-- formControlName = algum atributo que foi construído para o formulário  -->
+                <mat-form-field class="col-sm-6">
+                    <mat-label for="name">Nome:</mat-label>
+                    <input matInput type="text" formControlName="name" id="name">
+                </mat-form-field>
 
-        <label for="description">Descrição:</label>
-        <input type="text" formControlName="description" id="description">
+                <mat-form-field class="col-sm-6">
+                    <mat-label for="description">Descrição:</mat-label>
+                    <input matInput type="text" formControlName="description" id="description">
+                </mat-form-field>
 
-        <label for="code">Código:</label>
-        <input type="text" formControlName="code" id="code">
+                <mat-form-field class="col-sm-6">
+                    <mat-label for="code">Código:</mat-label>
+                    <input matInput type="text" formControlName="code" id="code">
+                </mat-form-field>
 
-        <label for="costPrice">Preço de Custo:</label>
-        <input type="text" formControlName="costPrice" id="costPrice">
+                <mat-form-field class="col-sm-6">
+                    <mat-label for="costPrice">Preço de Custo:</mat-label>
+                    <input matInput type="text" formControlName="costPrice" id="costPrice">
+                </mat-form-field>
 
-        <label for="salePrice">Preço de Venda:</label>
-        <input type="text" formControlName="salePrice" id="salePrice">
+                <mat-form-field class="col-sm-6">
+                    <mat-label for="salePrice">Preço de Venda:</mat-label>
+                    <input matInput type="text" formControlName="salePrice" id="salePrice">
+                </mat-form-field>
 
-        <label for="preparationTime">Tempo de Preparo:</label>
-        <input type="text" formControlName="preparationTime" id="preparationTime">
+                <mat-form-field class="col-sm-6">
+                    <mat-label for="preparationTime">Tempo de Preparo:</mat-label>
+                    <input matInput type="text" formControlName="preparationTime" id="preparationTime">
+                </mat-form-field>
+                
+                <mat-form-field class="col-sm-6">
+                    <mat-label for="productType">Tipo de Produto:</mat-label>
+                    <mat-select formControlName="productType">
+                        <mat-option value="">Selecione um Tipo</mat-option>
+                        <!-- diretiva *ngFor percorre o array de tiposnp e popula o <option> -->
+                        <mat-option *ngFor="let type of listTypes" [value]="type">{{type}}</mat-option>
+                    </mat-select>
+                </mat-form-field>
 
-        <label for="productType">Tipo de Produto:</label>
-        <select formControlName="productType">
-            <option value="">Selecione um Tipo</option>
-            <option value="SNACK">Snack</option>
-            <option value="DRINK">Bebida</option>
-            <option value="DESSERT">Sobremesa</option>
-        </select>
-
-        <button type="submit" (click)="sendForm()" id="submit">Cadastrar</button>
-    </form>
+                <!-- Componente Button do Angular Material -->
+                <div class="col-sm-6">
+                    <button mat-raised-button color="primary" (click)="sendForm()">Cadastar</button>
+                </div>
+            </form>
+        </mat-card-content>
+    </mat-card>
 </div>
 
 <!-- Omite ou motrar conteúdos de uma tag html dada uma condições -->
 <h5>Condição ngIf = {{ show }}</h5>
 <h5 *ngIf="show">Teste com ngIf</h5>
 
-<button (click)="hideTestNgIf()">Mostar/Esconder ngIf</button>
+<button mat-raised-button color="primary" (click)="hideTestNgIf()">Mostar/Esconder ngIf</button>
+
+<!-- Componente Alert do Bootstrap Angular -->
+<ngb-alert [dismissible]="false">
+    <strong>Warning!</strong> Better check yourself, you're not looking too good.
+</ngb-alert>
+
+
+<div class="example-container">
+    <mat-form-field>
+      <mat-label>Enter your email</mat-label>
+      <input matInput placeholder="pat@example.com" >
+    </mat-form-field>
+  </div>

@@ -3,55 +3,52 @@ h1 {
   text-align: center;
 }
 
-.form-product {
-  margin: 0 auto;
-  max-width: 500px;
-  border: 1px solid rgba(7, 7, 12, 0.5);
-  border-radius: 5px;
-  background-color: #28203e;
-  width: 60vw;
-  min-width: 300px;
-  /*padding: top right bottom left*/
-  padding: 2em 2em 2em 1.4em;
-  align-items: center;
+// .form-product {
+//   margin: 0 auto;
+//   max-width: 500px;
+//   border: 1px solid rgba(7, 7, 12, 0.5);
+//   border-radius: 5px;
+//   width: 60vw;
+//   min-width: 300px;
+//   /*padding: top right bottom left*/
+//   padding: 2em 2em 2em 1.4em;
+//   align-items: center;
+// }
+
+// #name,#description,#code,#costPrice,#salePrice,#preparationTime{
+//   width: 100%;
+//   /*margin: top right bottom left*/
+//   margin: 1px 0 0 0;
+//   min-height: 2em;/*define uma atura mínima para os elementos*/
+//   border-radius: 5px;
+//   border-color: rgba(40, 40, 66, 50%);
+//   color: rgb(107, 108, 107);
+// }
+
+// select {
+//   width: 60%;
+//   /*margin: top right bottom left*/
+//   margin: 1px 0 0 0;
+//   min-height: 2.5em;/*define uma atura mínima para os elementos*/
+//   border-radius: 5px;
+//   border-color: rgba(40, 40, 66, 50%);
+//   color: rgb(107, 108, 107);
+// }
+
+// label {
+//   display: block;
+//   margin: 1rem 0;
+//   color: rgb(0, 0, 0);
+//   font-weight: 900;
+// }
+
+
+.example-container mat-form-field + mat-form-field {
+  margin-left: 8px;
 }
 
-#name,#description,#code,#costPrice,#salePrice,#preparationTime{
-  width: 100%;
-  /*margin: top right bottom left*/
-  margin: 1px 0 0 0;
-  min-height: 2em;/*define uma atura mínima para os elementos*/
-  border-radius: 5px;
-  border-color: rgba(40, 40, 66, 50%);
-  color: rgb(107, 108, 107);
-}
-
-select {
-  width: 60%;
-  /*margin: top right bottom left*/
-  margin: 1px 0 0 0;
-  min-height: 2.5em;/*define uma atura mínima para os elementos*/
-  border-radius: 5px;
-  border-color: rgba(40, 40, 66, 50%);
-  color: rgb(107, 108, 107);
-}
-
-label {
-  display: block;
-  margin: 1rem 0;
-  color: rgb(230, 221, 221);
-  font-weight: 900;
-}
-
-#submit {
-  display: block;
-  width: 95%;
-  margin: 1em auto 1em auto;/*centralizando o input*/
-  height: 2em;
-  font-size: 1.1rem;
-  background-color: #0ab74f;
-  border: none;
-  color: white;
-  border-radius: 5px;
+.example-additional-selection {
+  opacity: 0.75;
+  font-size: 0.75em;
 }
 

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { CreateProductComponent } from './create-product.component';
 import { CreateProductRoutingModule } from './create-product-routing.modules';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MaterialImportsModule } from 'src/app/shared/material-imports/material-imports.module';
 
 
 
@@ -14,7 +15,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CommonModule,
     CreateProductRoutingModule,
     FormsModule, 
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MaterialImportsModule,
   ]
 })
 export class CreateProductModule { }
